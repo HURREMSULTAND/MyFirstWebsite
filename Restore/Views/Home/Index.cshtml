@@ -1,0 +1,455 @@
+﻿@model Restore.Models.IndexViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<!-- Domain Modal -->
+<div class="modal right fade" id="DomainModal" tabindex="-1" role="dialog" aria-labelledby="DomainModalLabel2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="modal-body">
+                <div class="modal__content">
+                    <a class="navbar-brand"> <span>Portfolyom </span></a>
+                    <!-- if logo is image enable this
+                      <h2 class="logo">
+                        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                      </h2> -->
+                    <p class="mt-md-3 mt-2">
+                        Projelerinizi gerçeğe dönüştürmeyi çok  isterim.En azından gerçekleştirmek için çabalarım.Benimle iletişime geçmek ister misiniz?
+                    </p>
+
+                    <img src=https://iskanunu.com/portal/wp-content/uploads/2019/03/arabuluculuk-600x330.jpg alt="" class="img-fluid mt-5">
+
+                    <div class="widget-social-icons mt-sm-5 mt-4">
+                        <ul class="icon-rounded address">
+                            <li class="mt-3">
+                                <p><a href="tel:534 486 46 76">534 486 46 76</a></p>
+                            </li>
+                            <li class="mt-2">
+                                <p><a href="mailto:hrsdikmen134@gmail.com"></a>hrsdikmen134@gmail.com</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="widget-social-icons mt-sm-5 mt-4">
+                        <ul class="follow-social">
+                            <li><a href="https://www.instagram.com/hurremsltan/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/h%C3%BCrrem-sultan-dikmen-52a427278/" target="blank"><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="https://github.com/HURREMSULTAND" target="_blank"><span class="fa fa-github"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //modal-content -->
+    </div>
+    <!-- //modal-dialog -->
+</div>
+<!-- //Domain modal -->
+<!-- banner section -->
+<section id="home" class="w3l-banner pb-5">
+    <div class="container pb-md-3">
+        <div class="banner-wrapper text-center">
+            <div class="">
+                <span class="text">Hakkımda</span>
+                <h1 class="mb-4 title">
+                    <span class="type-js"><span class="text-js">@Model.About.Fullname</span></span><br>
+                    @Model.About.JobTitle
+                </h1>
+                <p class="mx-lg-5">
+                    @Model.About.Description
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-lg-auto col-md-10">
+                    <img src="@Model.About.ImagePath" alt="" class="img-fluid mt-lg-5 mt-3">
+                </div>
+            </div>
+            <ul class="follow-social">
+                <li><p>Beni takip et </p></li>
+                <li><a href="https://www.instagram.com/hurremsltan/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/h%C3%BCrrem-sultan-dikmen-52a427278/" target="blank"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="https://github.com/HURREMSULTAND" target="_blank"><span class="fa fa-github"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- //banner section -->
+<!-- home page about section -->
+<section class="w3l-homeblock1" id="about">
+    <div class="middle- py-xl-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6">
+
+
+                    <h3 class="title-big">
+                        @Model.ServiceSlogan.Title
+
+                    </h3>
+                   <br />
+
+
+
+
+
+                        <img src="https://mcdn.wallpapersafari.com/medium/72/47/3H5LyD.jpg" alt="" class="radius-image img-fluid ">
+                      <p class="mt-4">
+
+                            @Html.Raw(Model.ServiceSlogan.Description)
+                        </p>
+
+
+
+                </div>
+
+               
+
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <div class="position-relative">
+                        <h3 class="title-big" style="font-size: 20px; line-height: 1.5;">Beni işe aldıktan sonra firmanızda vereceğiniz <span> 4 yıllık</span> bir oryantasyon programım sonrasında, sizde markanız için mükemmel projelere sahip olabilirsiniz.</h3>
+
+
+
+                        <p class="mt-lg-5">
+                        <p class="m-5"
+                           @Html.Raw(Model.ServiceSlogan.Description)
+                            <div class="col-lg-6 mt-lg-0 mt-5" style="margin-left: -200px; ">
+                                <div class="position-relative">
+
+                                </div>
+
+                        </p>
+
+
+
+                        <ul class="service-list mt-md-5 mt-4">
+                            @foreach (var item in Model.Services)
+                            {
+                                <li class="service-link"><a href="#">@item.Title</a></li>
+                            }
+
+
+
+                        </ul>
+                      
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            </div>
+    </div>
+</section>
+<!-- //home page about section -->
+<!-- home page about section -->
+<section class="w3l-homeblock2" id="skills">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6 align-self">
+
+                    
+
+
+
+
+
+
+        
+                </div>
+            </div>
+            <div class="col-lg-10 mt-lg-0 mt-md-5 mt-4">
+                <h3 class="title-big">
+                    @Model.SkillSlogan.Title
+                    </h3>
+
+                <br /> 
+                <br />
+
+
+
+                <div class="position-relative px-lg-5 mx-lg-0 mx-md-5 image-padding"    >
+                    <img src="https://nmap.org/movies/matrix/trinity-hacking-hd-cropscale-302x250.jpg
+
+" alt="" class="radius-image img-fluid">
+
+                    <p class="mt-4">
+                        @Model.SkillSlogan.Description
+                    </p>
+                    <div class="skills-bars mt-5">
+
+
+
+
+                    </div>
+                    @foreach (var skill in Model.Skills)
+                    {
+                        <div class="progress-info">
+                            <h6 class="progress-tittle">@skill.Title</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: @skill.Rate%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    }
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<!-- //home page about section -->
+<!-- home page about section -->
+<section class="w3l-clients w3l-homeblock3" id="skills">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6 align-self">
+                    <div class="position-relative px-lg-5">
+                        <img src="~/Fotos/mkl.jpg" alt="" class="radius-image img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <span class="text">Testimonials</span>
+                    <h3 class="title-big">Müşterilerim  <span>benim hakkımda</span> neler söyledi.</h3>
+                    <div id="owl-demo1" class="owl-carousel owl-theme mt-4 py-2 mb-4">
+
+
+                        @foreach (var customerReview in Model.CustomerReviews)
+                        {
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q>
+                                                @customerReview.Comment
+                                            </q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="test-img">
+                                                <img src="@customerReview.ImagePath" class="img-fluid"
+                                                     alt="client-img">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>@customerReview.Fullname</h3>
+                                                @*<p class="indentity">Seattle, Washington</p>*@
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //home page about section -->
+
+@Html.Partial("ContactView")
+
+
+@section scripts{
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }</script>
+    <!-- /move top -->
+    <!-- jQuery and Bootstrap JS -->
+    <script src="~/thema/assets/js/jquery-3.3.1.min.js"></script>
+
+    <script src="~/thema/assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+    <!-- owlcarousel -->
+    <script src="~/thema/assets/js/owl.carousel.js"></script>
+
+    <!-- script for tesimonials carousel slider -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    }
+                }
+            })
+        })</script>
+    <!-- //script for tesimonials carousel slider -->
+    <!-- script for portfolio slider -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-portfolio").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    568: {
+                        items: 2,
+                        nav: false
+                    },
+                    1080: {
+                        items: 3,
+                        nav: false
+                    }
+                }
+            })
+        })</script>
+    <!-- //script for portfolio slider -->
+    <!-- script for featured posts blog slider -->
+    <script>
+        $(document).ready(function () {
+            $('.owl-testimonial').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                responsiveClass: true,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    667: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false
+                    }
+                }
+            })
+        })</script>
+    <!-- //script for featured posts blog slider -->
+    <!-- script for banner typing text -->
+    <script>
+        function autoType(elementClass, typingSpeed) {
+            var thhis = $(elementClass);
+            thhis.css({
+                "position": "relative",
+                "display": "inline-block"
+            });
+            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+            thhis = thhis.find(".text-js");
+            var text = thhis.text().trim().split('');
+            var amntOfChars = text.length;
+            var newString = "";
+            thhis.text("|");
+            setTimeout(function () {
+                thhis.css("opacity", 1);
+                thhis.prev().removeAttr("style");
+                thhis.text("");
+                for (var i = 0; i < amntOfChars; i++) {
+                    (function (i, char) {
+                        setTimeout(function () {
+                            newString += char;
+                            thhis.text(newString);
+                        }, i * typingSpeed);
+                    })(i + 1, text[i]);
+                }
+            }, 1500);
+        }
+
+        $(document).ready(function () {
+            // Now to start autoTyping just call the autoType function with the
+            // class of outer div
+            // The second paramter is the speed between each letter is typed.
+            autoType(".type-js", 200);
+        });</script>
+    <!-- //script for banner typing text -->
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });</script>
+    <!-- disable body scroll which navbar is in active -->
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });</script>
+    <!-- //MENU-JS -->
+    <!-- bootstrap -->
+    <script src="~/thema/assets/js/bootstrap.min.js"></script>
+}

@@ -1,0 +1,54 @@
+﻿
+
+<section class="w3l-contactblock" id="contact">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-4 py-md-3">
+            <div class="contact-heading text-center">
+                <span class="text">Benimle iletişime geçmek çok kolay. </span>
+                <h3 class="title-big">Birlikte çalışmaya <span>Hazır Mısınız?</span></h3>
+                <p class="mt-4">Beni işe al ve sabrının sınırlarını zorla. Hadi bir proje başlatalım!</p>
+            </div>
+            <div class="row mt-md-5 mt-4 pt-lg-3">
+                <div class="col-lg-5">
+                    <p>
+                        
+                    </p>
+                    <ul class="address mt-md-5 mt-4">
+                        <li class="mb-3">
+                            <p><span class="fa fa-phone"></span> <a href="tel:05344864676">0534 486 46 76</a></p>
+                        </li>
+                        <li class="mb-4">
+                            <p><span class="fa fa-envelope-open"></span> <a href="mailto:hrsdikmen134@gmail.com">hrsdikmen134@gmail.com</a></p>
+                        </li>
+                        <li class="">
+                            <p><span class="fa fa-map-marker"></span> Esenler - İstanbul <br>İSTANBUL</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-7 mt-lg-0 mt-md-5 mt-4">
+
+                    <form action="@Url.Action("Contact","Home")" method="post">
+                        <div class="twice-two">
+                            <input type="text" class="form-control" name="Name" id="w3lName" placeholder="Name"
+                                   required="">
+                            <input type="email" class="form-control" name="Email" id="w3lSender" placeholder="Email"
+                                   required="">
+                        </div>
+                        <div class="twice">
+                            <input type="text" class="form-control" name="Subject" id="w3lSubject"
+                                   placeholder="Subject" required="">
+                        </div>
+                        <textarea name="Message" class="form-control" id="w3lMessage" placeholder="Message"
+                                  required=""></textarea>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-secondary btn-style mt-4">Send Message</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

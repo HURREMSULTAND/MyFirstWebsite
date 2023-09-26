@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="=tr">
+<head>
+    <title>İlk Web Sitem</title>
+
+    <link href="//fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" href="~/Fotos/favicon-32x32.png" type="image/x-icon">
+
+
+    <!-- Template CSS -->
+    @*../../*@
+    @*tilda~*@
+    @*.net de yardım eder net *@
+    <link rel="stylesheet" href="~/thema/assets/css/style-starter.css">
+</head>
+<body>
+
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke">
+                <a class="navbar-brand" href=" " @Url.Action("Index", "Home")>
+                    <span>Hürrem Sultan DİKMEN</span>
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa icon-expand fa-bars"></span>
+                    <span class="fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            @*<a class="nav-link" href="index.html">Anasayfa </a>*@
+
+                            @Html.ActionLink("Anasayfa", "Index", "Home", null, new { @class = "nav-link" })
+
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Portfolyo", "Portfolio", "Home", null, new { @class = "nav-link" })
+                            @* <a class="nav-link" href="portfolio.html">Portfolyom</a>*@
+                        </li>
+                        <li class="nav-item ">
+                            @Html.ActionLink("İletişim", "Contact", "Home", null, new { @class = "nav-link" })
+                            @*<a class="nav-link" href="contact.html">İletişime Geç</a>*@
+
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <div class="popup ml-auto">
+                        <a href="#menu" class="domain" data-toggle="modal" data-target="#DomainModal">
+                            <div class="hamburger">
+                                <span class="top-bar"></span>
+                                <span class="middle-bar"></span>
+                                <span class="bottom-bar"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position ml-lg-2">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--/header-->
+    <div class="header-gap">
+
+    </div>
+
+
+    @RenderBody()
+
+
+    <div class="copyright py-sm-5 py-4 text-center">
+        <div class="container">
+            <p class="copy-footer-29">
+                © 2023 ilk Web Sitem. Bu Harika Web Sitesi  <a href="hrsdikmen134@gmail.com">Hürrem Sultan DİKMEN</a> tarafından düzenlenmiştir.
+            </p>
+        </div>
+    </div>
+
+    @RenderSection("scripts", false)
+</body>
+</html>

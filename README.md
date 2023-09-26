@@ -17,6 +17,13 @@ Basic düzeydeki tüm bilgilerimi kullanarak, bu alandaki gelişimimi gözlemlem
 ## :pushpin: Kurulum
 Projeyi <>Code kısmından zip dosyası olarak indirebilir,yada proje adresini kopyalayıp dosya yolu ile açabilirsiniz.</br></br>
 
+## :pushpin: Teşekkürler
+Projeme katkılarından dolayı teşekkürlerimi iletirim.
+  :stop_sign:  [Yavuz Selim KAHRAMAN](https://www.linkedin.com/in/yvzkahraman/?originalSubdomain=tr)   :stop_sign:  [Murat YÜCEDAĞ](https://www.linkedin.com/in/murat-y%C3%BCceda%C4%9F-186933149/)  </br></br>
+
+
+
+
 ## :pushpin: Projemden Ekran Görüntüleri :camera:
 
 

@@ -1,8 +1,29 @@
-# MyFirstWebsite Projem</br></br>
 
-## Kullanılan Teknolojiler
-#### ASP.NET MVC mimarisi 
-#### HTML, CSS, JavaScript 
-#### Dapper ,Razor 
-#### SQLExpress 
-![Ekran görüntüsü 2023-09-26 225514](https://github.com/HURREMSULTAND/MyFirstWebsite/assets/143317089/135fcefa-84f6-4a51-91f8-29df906c58cd)
+<pre>
+<h1> MyFirstWebsite Projem</h3>
+</pre>
+## :pushpin: Projenin Amacı 
+Basic düzeydeki tüm bilgilerimi kullanarak, bu alandaki gelişimimi gözlemlemek ve takip etmek amaçlı dinamik bir portfolyo sitesi tasarladım.:relaxed:
+
+## :pushpin: Kullanılan Teknolojiler 
+
+<ul>
+  <li>ASP.NET MVC mimarisi </li>
+  <li>HTML, CSS, JavaScript</li>
+  <li>Dapper ORM ,Razor </li>
+  <li>SQLExpress </li>
+</ul> </br>
+
+## :pushpin: Kurulum
+Projeyi <>Code kısmından zip dosyası olarak indirebilir,yada proje adresini kopyalayıp dosya yolu ile açabilirsiniz.</br></br>
+
+## :pushpin: Projemden Ekran Görüntüleri :camera:
+
+
+![Ekran görüntüsü 2023-09-26 225514](https://github.com/HURREMSULTAND/MyFirstWebsite/assets/143317089/135fcefa-84f6-4a51-91f8-29df906c58cd) </br>
+
+![Ekran görüntüsü 2023-09-26 225604](https://github.com/HURREMSULTAND/MyFirstWebsite/assets/143317089/fa9d08bd-7216-49e9-b968-a6506d864332)  </br>
+
+![Ekran görüntüsü 2023-09-26 225646](https://github.com/HURREMSULTAND/MyFirstWebsite/assets/143317089/4faef49b-a996-41f4-b350-84bc1960dadb) </br>
+
+![Ekran görüntüsü 2023-09-26 225834](https://github.com/HURREMSULTAND/MyFirstWebsite/assets/143317089/9073fc6c-d671-456b-b7f9-7c89a92901e5) </br>

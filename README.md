@@ -1,6 +1,6 @@
 
 <pre>
-<h1> MyFirstWebsite Projem</h3>
+<h1>MyFirstWebsite Projem</h3>
 </pre>
 ## :pushpin: Projenin Amacı 
 Basic düzeydeki tüm bilgilerimi kullanarak, bu alandaki gelişimimi gözlemlemek ve takip etmek amaçlı dinamik bir portfolyo sitesi tasarladım.:relaxed:

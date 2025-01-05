@@ -1,7 +1,5 @@
-
-<pre>
-<h1>MyFirstWebSite Projem</h3>
-</pre>
+ 
+#     ![diamond_1808816](https://github.com/user-attachments/assets/ab2b7c73-a2ef-417d-ac5a-98841f4d8cbf) MY FİRSTWEBSİTE
 ## :pushpin: Projenin Amacı 
 Basic düzeydeki tüm bilgilerimi kullanarak, bu alandaki gelişimimi gözlemlemek ve takip etmek amaçlı dinamik bir portfolyo sitesi tasarladım.:relaxed:
 

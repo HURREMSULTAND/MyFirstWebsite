@@ -1,6 +1,6 @@
  
 #     ![diamond_1808816](https://github.com/user-attachments/assets/ab2b7c73-a2ef-417d-ac5a-98841f4d8cbf) MY FİRSTWEBSİTE
-## :pushpin: Projenin Amacı 
+##  ![target_5538046](https://github.com/user-attachments/assets/b7c2fa10-f7f3-4e2b-93d6-f516289ec22d)   Projenin Amacı 
 Basic düzeydeki tüm bilgilerimi kullanarak, bu alandaki gelişimimi gözlemlemek ve takip etmek amaçlı dinamik bir portfolyo sitesi tasarladım.:relaxed:
 
 ## :pushpin: Kullanılan Teknolojiler 
